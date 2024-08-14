@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>إضافة منتج</title>
+</head>
+<body>
+    <h1>إضافة منتج جديد</h1>
+    <form action="/add_product" method="POST" enctype="multipart/form-data">
+        <label for="product_name">اسم المنتج:</label>
+        <input type="text" name="product_name" required><br><br>
+
+        <label for="product_description">وصف المنتج:</label>
+        <textarea name="product_description" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="product_price">السعر:</label>
+        <input type="number" name="product_price" step="0.01" required><br><br>
+
+        <label for="product_image">صورة المنتج:</label>
+        <input type="file" name="product_image" accept="image/*" required><br><br>
+
+        <input type="submit" value="إضافة المنتج">
+    </form>
+</body>
+</html>
